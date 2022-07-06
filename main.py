@@ -10,6 +10,7 @@ try:
         print(url)
         browser.get(url=url)
         time.sleep(5)
+        print("Лиза коцык")
 except Exception as error:
     print(error)
 finally:
