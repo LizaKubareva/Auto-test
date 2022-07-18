@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.service import Service
 import time
 s=Service("C:\\Users\\e.kubareva\\PycharmProjects\\pythonProject\\drivers\\windows\\chromedriver.exe")
 browser = webdriver.Chrome(service=s)
-urls = ["https://myfitnessclub.ru/" ]
+urls = ["https://miloetelo.ru"]
 
 
 try:
@@ -15,7 +15,8 @@ try:
         button.click()
         time.sleep(3)
         input_email= browser.find_element("xpath", '//*[@id="exampleModal"]/div/div/form/div[2]/input[1]')
-        input_email.send_keys("lirfgehva@mskd.ckdk")
+        input_email.send_keys("lirfgfehva@mskd.ckdk")
+        time.sleep(3)
         further = browser.find_element("xpath", '//*[@id="exampleModal"]/div/div/form/div[3]/button')
         further.click()
         time.sleep(3)
@@ -52,6 +53,8 @@ try:
         oferta.click()
         support = browser.find_element("xpath", '/html/body/div[4]/footer/div/div/div[3]/div/a[3]')
         support.click()
+
+
 
 except Exception as error:
     print(error)
