@@ -37,7 +37,7 @@ try:
         time.sleep(3)
         button_z = browser.find_element("xpath", '//*[@id="prise_1"]/div/div/div/div/div[1]/div/div[4]/a')
         button_z.click()
-        time.sleep(3)
+        time.sleep(3)/
         close_z = browser.find_element("xpath", '//*[@id="exampleModal"]/div/div/form/div[1]/button/span')
         close_z.click()
         time.sleep(3)
